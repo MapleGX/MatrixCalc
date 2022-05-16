@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		544B3453282D67A900886CFE /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544B3452282D67A900886CFE /* AnswerView.swift */; };
 		54A85382274A5E3200125A61 /* MatrixCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A85381274A5E3200125A61 /* MatrixCalcApp.swift */; };
 		54A85384274A5E3200125A61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A85383274A5E3200125A61 /* ContentView.swift */; };
 		54A85386274A5E3200125A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A85385274A5E3200125A61 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		54A85394274A5E3200125A61 /* MatrixCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A85393274A5E3200125A61 /* MatrixCalcTests.swift */; };
 		54A8539E274A5E3200125A61 /* MatrixCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8539D274A5E3200125A61 /* MatrixCalcUITests.swift */; };
 		54A853A0274A5E3200125A61 /* MatrixCalcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8539F274A5E3200125A61 /* MatrixCalcUITestsLaunchTests.swift */; };
+		54B8F0E42823DE7A003366F8 /* RowSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8F0E32823DE7A003366F8 /* RowSelector.swift */; };
+		54B8F0E8282429C4003366F8 /* Matrx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8F0E7282429C4003366F8 /* Matrx.swift */; };
+		54B8F0EB28245195003366F8 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B8F0EA28245195003366F8 /* StepperView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		544B3452282D67A900886CFE /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnswerView.swift; path = UI_View/AnswerView.swift; sourceTree = "<group>"; };
 		54A8537E274A5E3200125A61 /* MatrixCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A85381274A5E3200125A61 /* MatrixCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCalcApp.swift; sourceTree = "<group>"; };
 		54A85383274A5E3200125A61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +50,9 @@
 		54A85399274A5E3200125A61 /* MatrixCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A8539D274A5E3200125A61 /* MatrixCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCalcUITests.swift; sourceTree = "<group>"; };
 		54A8539F274A5E3200125A61 /* MatrixCalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54B8F0E32823DE7A003366F8 /* RowSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowSelector.swift; sourceTree = "<group>"; };
+		54B8F0E7282429C4003366F8 /* Matrx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrx.swift; sourceTree = "<group>"; };
+		54B8F0EA28245195003366F8 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 			children = (
 				54A85381274A5E3200125A61 /* MatrixCalcApp.swift */,
 				54A85383274A5E3200125A61 /* ContentView.swift */,
+				544B3452282D67A900886CFE /* AnswerView.swift */,
+				54B8F0E7282429C4003366F8 /* Matrx.swift */,
+				54B8F0E32823DE7A003366F8 /* RowSelector.swift */,
+				54B8F0E928245169003366F8 /* UI_View */,
 				54A85385274A5E3200125A61 /* Assets.xcassets */,
 				54A8538A274A5E3200125A61 /* MatrixCalc.entitlements */,
 				54A85387274A5E3200125A61 /* Preview Content */,
@@ -127,6 +139,14 @@
 				54A8539F274A5E3200125A61 /* MatrixCalcUITestsLaunchTests.swift */,
 			);
 			path = MatrixCalcUITests;
+			sourceTree = "<group>";
+		};
+		54B8F0E928245169003366F8 /* UI_View */ = {
+			isa = PBXGroup;
+			children = (
+				54B8F0EA28245195003366F8 /* StepperView.swift */,
+			);
+			path = UI_View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B8F0E42823DE7A003366F8 /* RowSelector.swift in Sources */,
+				54B8F0EB28245195003366F8 /* StepperView.swift in Sources */,
+				544B3453282D67A900886CFE /* AnswerView.swift in Sources */,
 				54A85384274A5E3200125A61 /* ContentView.swift in Sources */,
+				54B8F0E8282429C4003366F8 /* Matrx.swift in Sources */,
 				54A85382274A5E3200125A61 /* MatrixCalcApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
