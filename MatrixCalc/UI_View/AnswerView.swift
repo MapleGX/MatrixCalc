@@ -13,18 +13,19 @@ struct AnswerView: View {
     @Binding var columns: Int
     var body: some View {
         VStack{
-            Spacer()
-            let gridItemLayoutA: [GridItem] = Array(repeating: .init(.fixed(30)), count: columns)
-            LazyVGrid(columns: gridItemLayoutA, spacing: 10) {
-                ForEach(matrix.indices, id: \.self){ cell in
-                       Text(String(matrix[cell]))
+            ScrollView([.vertical,.horizontal], showsIndicators: false, content: {
+                let gridItemLayoutA: [GridItem] = Array(repeating: .init(.fixed(30)), count: columns)
+                LazyVGrid(columns: gridItemLayoutA, spacing: 10) {
+                    ForEach(matrix.indices, id: \.self){ cell in
+                        Text(String(matrix[cell]))
+                    }
                 }
-            }
-            Spacer()
+            })
+            .padding([.top, .horizontal])
             Button {
                 dismiss()
             } label: {
-               Text("Dismiss")
+                Text("Dismiss")
                     .padding(.bottom, 10)
             }
             .buttonStyle(.borderless)

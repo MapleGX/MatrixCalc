@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		544B3452282D67A900886CFE /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnswerView.swift; path = UI_View/AnswerView.swift; sourceTree = "<group>"; };
+		544B3452282D67A900886CFE /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		54A8537E274A5E3200125A61 /* MatrixCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A85381274A5E3200125A61 /* MatrixCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCalcApp.swift; sourceTree = "<group>"; };
 		54A85383274A5E3200125A61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,12 +103,9 @@
 		54A85380274A5E3200125A61 /* MatrixCalc */ = {
 			isa = PBXGroup;
 			children = (
+				54B8F0E928245169003366F8 /* UI_View */,
 				54A85381274A5E3200125A61 /* MatrixCalcApp.swift */,
 				54A85383274A5E3200125A61 /* ContentView.swift */,
-				544B3452282D67A900886CFE /* AnswerView.swift */,
-				54B8F0E7282429C4003366F8 /* Matrx.swift */,
-				54B8F0E32823DE7A003366F8 /* RowSelector.swift */,
-				54B8F0E928245169003366F8 /* UI_View */,
 				54A85385274A5E3200125A61 /* Assets.xcassets */,
 				54A8538A274A5E3200125A61 /* MatrixCalc.entitlements */,
 				54A85387274A5E3200125A61 /* Preview Content */,
@@ -144,7 +141,10 @@
 		54B8F0E928245169003366F8 /* UI_View */ = {
 			isa = PBXGroup;
 			children = (
+				54B8F0E7282429C4003366F8 /* Matrx.swift */,
 				54B8F0EA28245195003366F8 /* StepperView.swift */,
+				54B8F0E32823DE7A003366F8 /* RowSelector.swift */,
+				544B3452282D67A900886CFE /* AnswerView.swift */,
 			);
 			path = UI_View;
 			sourceTree = "<group>";
